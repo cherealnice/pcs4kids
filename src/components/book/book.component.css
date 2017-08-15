@@ -1,0 +1,20 @@
+.book {
+
+}
+
+.title {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    margin: 0;
+    width: 196px;
+}
+
+.cover-pic {
+    position: relative;
+    height: 300px;
+    width: 200px;
+}

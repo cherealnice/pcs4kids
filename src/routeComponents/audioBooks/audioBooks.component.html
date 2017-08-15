@@ -1,0 +1,14 @@
+<page [title]='title'>
+    <swiper [config]="config">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let book of books">
+                <book [book]="book"></book>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </swiper>
+</page>
