@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "ng build --prod=true --aot=true"
+    "build-prod": "ng build --prod --aot",
+    "deploy": "npm run build-prod && angular-cli-ghpages"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/platform-browser": "4.2.4",
     "@angular/platform-browser-dynamic": "4.2.4",
     "@angular/router": "4.2.4",
+    "angular-cli-github-pages": "^0.2.0",
     "angular2-useful-swiper": "4.0.6",
     "ansi-styles": "3.2.0",
     "core-js": "2.4.1",
