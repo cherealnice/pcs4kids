@@ -19,12 +19,6 @@ import { AudioBooks } from '../routeComponents/audioBooks/audioBooks.component'
   imports: [
     BrowserModule,
     SwiperModule,
-    RouterModule.forRoot([
-      {
-        path: 'audiobooks',
-        component: AudioBooks,
-      }
-    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
