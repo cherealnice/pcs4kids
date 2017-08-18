@@ -1,4 +1,10 @@
-import { Component, Input, Directive } from '@angular/core';
+import { Component, Input, Directive } from '@angular/core'
+
+class AudioBook {
+    title: string;
+    imgSrc: string;
+    url: string;
+}
 
 @Component({
     selector: 'book',
@@ -6,8 +12,6 @@ import { Component, Input, Directive } from '@angular/core';
     styleUrls: ['./book.component.css'],
 })
 
-class Book {
-    @Input() book: object;
-};
-
-export default Book;
+export class Book {
+    @Input() book: AudioBook
+}

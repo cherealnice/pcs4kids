@@ -1,7 +1,7 @@
-import Page from './page/page.component';
-import Book from './book/book.component';
+// import Page from './page/page.component';
+// import Book from './book/book.component';
 
-export default [
-    Page,
-    Book,
-];
+// export default [
+//     Page,
+//     Book,
+// ];

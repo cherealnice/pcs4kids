@@ -1,18 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
-import { BOOKS } from '../../constants/index';
+import { BOOKS } from '../../constants/index'
 
-@Component({
-    selector: 'page-audiobooks',
-    templateUrl: './audioBooks.component.html',
-    styleUrls: ['./audioBooks.component.css'],
-})
-
-class AudioBooks {
-    title = 'AudioBooks';
-    books = BOOKS;
-    config = CONFIG;
-};
 
 const CONFIG = {
     pagination: '.swiper-pagination',
@@ -21,8 +10,18 @@ const CONFIG = {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     spaceBetween: 16,
-};
+}
 
-export const onBookClick = book => history.pushState({}, '', book.url);
+@Component({
+    selector: 'page-audiobooks',
+    templateUrl: './audioBooks.component.html',
+    styleUrls: ['./audioBooks.component.css'],
+})
 
-export default AudioBooks;
+export class AudioBooks {
+    title = 'AudioBooks';
+    books = BOOKS;
+    config = CONFIG;
+}
+
+export const onBookClick = book => history.pushState({}, '', book.url)

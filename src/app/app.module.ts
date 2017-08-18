@@ -1,19 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule }   from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { RouterModule }   from '@angular/router'
 
-import { SwiperModule } from 'angular2-useful-swiper';
+import { SwiperModule } from 'angular2-useful-swiper'
 
-import { AppComponent } from './app.component';
-import routeComponents from '../routeComponents';
-import appComponents from '../components/index';
-import Page from '../components/page/page.component';
+import { AppComponent } from './app.component'
+import { Page } from '../components/page/page.component'
+import { Book } from '../components/book/book.component'
+import { AudioBooks } from '../routeComponents/audioBooks/audioBooks.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ...appComponents,
-    ...Object.values(routeComponents),
+    Page,
+    Book,
+    AudioBooks,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +22,7 @@ import Page from '../components/page/page.component';
     RouterModule.forRoot([
       {
         path: 'audiobooks',
-        component: routeComponents.AudioBooks,
+        component: AudioBooks,
       }
     ]),
   ],
@@ -29,4 +30,4 @@ import Page from '../components/page/page.component';
   bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule {}
