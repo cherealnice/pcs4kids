@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-prod": "ng build --prod --aot",
-    "deploy": "npm run build-prod && angular-cli-ghpages"
+    "postinstall": "http-server dist/"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +29,7 @@
     "core-js": "2.4.1",
     "enhanced-resolve": "3.3.0",
     "has-ansi": "3.0.0",
+    "http-server": "^0.10.0",
     "rxjs": "5.4.2",
     "swiper": "3.4.2",
     "zone.js": "0.8.14"
@@ -53,5 +54,9 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
+  },
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0"
   }
 }
